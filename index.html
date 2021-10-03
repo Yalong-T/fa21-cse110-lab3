@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" href="media/icon.png">
+        <title>Meeting Mintues</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1><i>The Avengers Meeting Mintues</i></h1>
+                <h2>Topic of the meeting:Find Thanos</h2>
+                <h3>date:2021/10/1</h3>
+
+                <h3><span>Links to different section</span></h3>
+                <nav>
+                    <ol>
+                        <li><a href="#attendance"><em>Attendance List</em></a></li>
+                        <li><a href="#agenda"><em>Agenda for Today</em></a></li>
+                        <li><a href="#unfinished"><em>Unfinished Things from Last Meeting</em></a></li>
+                    </ol>
+                </nav>
+            </div>    
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h3 id="attendance">Attendance List</h3>
+                <ol>
+                    <li><input type="checkbox">Captain America</li>
+                    <li><input type="checkbox">Iron Man</li>
+                    <li><input type="checkbox">Hulk</li>
+                    <li><input type="checkbox">Thor</li>
+                    <li><input type="checkbox">Black widow</li>
+                    <li><input type="checkbox">Hawkeye</li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h3 id="agenda">Agenda</h3>
+                <p>
+                    Three things we need do today:
+                </p>
+                <ul>
+                    <li>Find ohter teammates</li>
+                    <li>How to find Thanos</li>
+                    <li>Try to recruit new members</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h3 id="unfinished">Unfinished Things from Last Meeting</h3>
+                <ul>
+                    <li>Creating an online application form</li>
+                    <li>Put the Meeting video</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h3 id="meeting">Meeting</h3>
+                <ul>
+                    <li>img for meeting </li>
+                    <img src="media/photo.png" alt="Picture of meeting" width="500" height="300">
+                    <li>meeting audio recording</li>
+                    <figure>
+                        <figcaption><em>meeting audio recording</em>:</figcaption>
+                        <audio controls src="media/audio.mp3">
+                            Your browser does not support the <code>audio</code> element.
+                        </audio>
+                    </figure>
+                    <li>Meeting video recording</li>
+                    <video height="200" width="400" controls>
+                        <source src="media/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video>
+ 
+                </ul>
+                
+
+            </section>
+            <h3>Summary</h3>
+            <details>
+                <summary>summary for our meeting</summary>
+                Did not form a unified opinion! We have to meet again...
+            </details>
+        </main>
+        <h2>Join us</h2>
+        <form>
+            <fieldset>
+                <label>Your Name:</label>
+                <input type="text"><br>
+                <label>Today's Date:</label>
+                <input type="date"><br>
+                <div>
+                    <label>Any super power?</label>
+                    <input type="radio" id="1" name="Contact" value="Yes">
+                    <label for="1">Yes</label>
+                    <input type="radio" id="2" name="Contact" value="No">
+                    <label for="2">No</label><br>
+                </div>
+                <label>Why you want to join us?</label><br>
+                <textarea rows="5" cols="50">Enter Text Here</textarea><br>
+                <label>You work a few days a week?</label>
+                <input list="list">
+                <datalist id="list">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3~5">
+                    <option value="6~7">
+                </datalist><br>
+                <label>Which teammates you want to work with?</label>
+                <select>
+                    <option>Don't care</option>
+                    <option>Captain America</option>
+                    <option>Iron Man</option>
+                    <option>Hulk</option>
+                    <option>None of them</option>
+                </select><br>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+        <footer>
+            <p>
+                Author : <b>Yalong Tian</b>
+            </p>
+        </footer>
+    </body>
+</html>
