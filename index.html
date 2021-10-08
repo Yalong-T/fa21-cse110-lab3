@@ -2,7 +2,9 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="media/icon.png">
+        <link rel="stylesheet" href="style.css">
         <title>Meeting Mintues</title>
     </head>
     <body>
@@ -11,19 +13,20 @@
                 <h1><i>The Avengers Meeting Mintues</i></h1>
                 <h2>Topic of the meeting:Find Thanos</h2>
                 <h3>date:2021/10/1</h3>
-
-                <h3><span>Links to different section</span></h3>
-                <nav>
-                    <ol>
-                        <li><a href="#attendance"><em>Attendance List</em></a></li>
-                        <li><a href="#agenda"><em>Agenda for Today</em></a></li>
-                        <li><a href="#unfinished"><em>Unfinished Things from Last Meeting</em></a></li>
-                    </ol>
-                </nav>
             </div>    
         </header>
         <hr>
         <main>
+            <h3 style="color:rgb(16, 79, 173);"><span>Links to different section</span></h3>
+            <nav>
+                <ul id="top">
+                    <li><a href="#attendance"><em>Attendance List</em></a></li>
+                    <li><a href="#agenda"><em>Agenda for Today</em></a></li>
+                    <li><a href="#unfinished"><em>Unfinished Things from Last Meeting</em></a></li>
+                    <li><a href="#meeting"><em>Meeting</em></a></li>
+                    <li><a href="#summary"><em>Summary</em></a></li>
+                </ul>
+            </nav>
             <section>
                 <h3 id="attendance">Attendance List</h3>
                 <ol>
@@ -41,25 +44,27 @@
                 <p>
                     Three things we need do today:
                 </p>
-                <ul>
-                    <li>Find ohter teammates</li>
-                    <li>How to find Thanos</li>
-                    <li>Try to recruit new members</li>
+                <ul class="flex-container">
+                    <li class="flex-item">Find teammates</li>
+                    <li class="flex-item">Find Thanos</li>
+                    <li class="flex-item">Recruit new members</li>
                 </ul>
             </section>
             <hr>
             <section>
                 <h3 id="unfinished">Unfinished Things from Last Meeting</h3>
-                <ul>
-                    <li>Creating an online application form</li>
-                    <li>Put the Meeting video</li>
-                </ul>
+                <div class="wrapper ">
+                        <div class="item item-1">Creating an online application form</div>
+                        <div class="item item-2">Put the Meeting video</div>
+                        <div class="item item-3">Find Thanos</div>
+                </div>
+
             </section>
             <hr>
             <section>
                 <h3 id="meeting">Meeting</h3>
                 <p>img for meeting</p>
-                <img src="media/photo.png" alt="Picture of meeting" width="500" height="300">
+                <img src="media/photo.png" alt="Picture of meeting" class="photo" width="500" height="300">
                 <p>meeting audio recording</p>
                 <figure>
                     <figcaption><em>meeting audio recording</em>:</figcaption>
@@ -68,18 +73,15 @@
                     </audio>
                 </figure>
                 <p>Meeting video recording</p>
-                <video height="200" width="400" controls>
+                <video class="video" height="200" width="400" controls>
                     <source src="media/video.mp4" type="video/mp4">
                     Your browser does not support the video tag
                 </video>
- 
-                
-
             </section>
-            <h3>Summary</h3>
+            <h3 id="summary">Summary</h3>
             <details>
-                <summary>summary for our meeting</summary>
-                Did not form a unified opinion! We have to meet again...
+                <summary class="sr">summary for our meeting</summary>
+                <p>Did not form a unified opinion! We have to meet again...</p>
             </details>
         </main>
         <h2>Join us</h2>
@@ -118,7 +120,7 @@
             </fieldset>
         </form>
         <footer>
-            <p>
+            <p class="name">
                 Author : <b>Yalong Tian</b>
             </p>
         </footer>
